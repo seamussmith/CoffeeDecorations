@@ -4,6 +4,9 @@ public class App
 {
     public static void main(String[] args) 
     {
-        System.out.println("Hello, World!");
+        Beverage beverage = new DarkRoast();
+        beverage = new MilkCondiment(beverage);
+        System.out.println(beverage.getDescription());
+        System.out.println(beverage.cost());
     }
 }
